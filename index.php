@@ -1,4 +1,7 @@
 <?php  
+
+require_once __DIR__ . '/Categories.php';
+
 class Post extends Categories{
     public $titolo;
     public $categoria;
@@ -22,7 +25,9 @@ $articolo2 = new Post("Il mio secondo articolo", "Cucina", "pasta, pizza, dolci"
 $articolo3 = new Post("Il mio terzo articolo", "Tecnologia", "smartphone, computer, tablet");
 $articolo4 = new Post("Il mio quarto articolo", "Viaggi", "mare, montagna, città");
 
-
-
+$articolo1->printArticolo();
+$articolo2->printArticolo();
+$articolo3->printArticolo();
+$articolo4->printArticolo();
 
 ?>
